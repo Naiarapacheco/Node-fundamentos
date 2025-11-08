@@ -8,7 +8,7 @@ export function createUser(req, res) {
   const { name, age } = req.body;
 
   const newUser = {
-    id: users.length ? users[users.length - 1].id + 1 : 1, //ultimo elemento do array [users.length - 1]
+    id: users.length ? users[users.length - 1].id + 1 : 1,
     name,
     age,
   };
